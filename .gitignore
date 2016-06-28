@@ -1,1 +1,4 @@
-.sqs-cache/
+.sqs-cache
+.sass-cache
+node_modules
+**/*/*.css.map

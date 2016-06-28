@@ -43,7 +43,7 @@ A test Squarespace setup.
   ```
 
   Add the server settings to template.conf
-  
+
   ```
   "server": {
       "siteurl": "https://your-site.squarespace.com",
@@ -72,7 +72,7 @@ A test Squarespace setup.
     ```
 
 3. Set up a remote for live
-    
+
   ```
   git remote add live https://your-site.squarespace.com/template.git
     ```
@@ -104,3 +104,35 @@ git push live master
 ```
 
 You will be asked for the Squarespace username and password the first time you push to live.
+
+## Using Sass instead of Less
+
+This project uses Grunt to generate CSS from Sass instead of using Squarespace's built in LESS compiler.
+
+To install the dependencies run:
+
+```
+npm install
+```
+
+Make your changes to the .scss files in /sass
+
+To generate the CSS from Sass:
+
+```
+grunt build
+```
+
+To watch for changes and re-generate the CSS as you develop:
+
+```
+grunt watch
+```
+
+## Useful stuff
+
+Reset the local server cache with
+
+```
+sqs buster
+```
