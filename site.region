@@ -6,6 +6,7 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  {.end}
 		{squarespace-headers}
+		<link rel="stylesheet" type="text/css" href="assets/styles.css">
 
 	</head>
 	{.if template.mobileStylesEnabled}{.or}<!-- Mobile Styles Disabled -->{.end}
